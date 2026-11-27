@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="Premium car wash and auto detailing in Ranchi, Jharkhand. Explore car washing, interior cleaning, polishing and paint protection services.">
+  <title>Ranchi AutoCare | Premium Car Wash & Detailing</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Ranchi AutoCare home">RANCHI<span>AUTOCARE</span><i>.</i></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#about">Why Us</a>
+        <a class="nav-link" href="#packages">Packages</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Book a Wash <i class="bi bi-arrow-up-right"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <p class="eyebrow reveal"><span></span> PREMIUM CAR CARE IN RANCHI</p>
+        <h1 class="reveal">Bring back<br>the <em>brilliance.</em></h1>
+        <p class="hero-copy reveal">From a quick, refreshing wash to complete interior and exterior detailing, give your car the care it deserves.</p>
+        <div class="hero-actions reveal">
+          <a class="button button-orange" href="#contact">Book your service <i class="bi bi-arrow-up-right"></i></a>
+          <a class="button button-ghost" href="#services"><i class="bi bi-play-circle"></i> Explore services</a>
+        </div>
+        <div class="hero-meta reveal">
+          <div><strong>01</strong><span>Careful<br>cleaning</span></div>
+          <div><strong>02</strong><span>Detail-led<br>approach</span></div>
+          <div><strong>03</strong><span>Easy WhatsApp<br>booking</span></div>
+        </div>
+      </div>
+      <a href="#services" class="scroll-cue" aria-label="Scroll to services"><span></span> SCROLL TO DISCOVER</a>
+    </section>
+
+    <section class="intro-strip">
+      <div class="container intro-inner">
+        <p>YOUR CAR. OUR ATTENTION TO DETAIL.</p>
+        <span>WASH <b>✳</b> DETAIL <b>✳</b> PROTECT <b>✳</b> REPEAT</span>
+      </div>
+    </section>
+
+    <section class="section section-services" id="services">
+      <div class="container">
+        <div class="section-heading heading-row">
+          <div>
+            <p class="eyebrow dark-eyebrow"><span></span> WHAT WE DO</p>
+            <h2>Care for every<br><em>curve & corner.</em></h2>
+          </div>
+          <p class="heading-description">Explore our car care services, from everyday cleaning to specialist detailing and paint protection.</p>
+        </div>
+
+        <div class="service-filters" role="group" aria-label="Filter services">
+          <button class="filter-btn active" data-filter="all">All services</button>
+          <button class="filter-btn" data-filter="wash">Wash & clean</button>
+          <button class="filter-btn" data-filter="detail">Detailing</button>
+          <button class="filter-btn" data-filter="protect">Protection</button>
+        </div>
+
+        <div class="service-grid" id="serviceGrid">
+          <article class="service-card" data-category="wash">
+            <div class="service-image"><img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=900&q=85" alt="Car covered in foam during a wash" loading="lazy"><span>01</span></div>
+            <div class="service-info"><div class="service-icon"><i class="bi bi-droplet-half"></i></div><h3>Premium Foam Wash</h3><p>Exterior wash to lift everyday dust and road grime, followed by a careful rinse and dry.</p><a href="#contact" class="text-link" data-service="Premium Foam Wash">Enquire about this <i class="bi bi-arrow-up-right"></i></a></div>
+          </article>
+          <article class="service-card" data-category="wash detail">
+            <div class="service-image"><img src="service/interior-cleaning.jpg" alt="Car interior cleaning" loading="lazy"><span>02</span></div>
+            <div class="service-info"><div class="service-icon"><i class="bi bi-stars"></i></div><h3>Interior Deep Cleaning</h3><p>Refresh seats, carpets, dashboard and touchpoints with suitable interior cleaning methods.</p><a href="#contact" class="text-link" data-service="Interior Deep Cleaning">Enquire about this <i class="bi bi-arrow-up-right"></i></a></div>
+          </article>
+          <article class="service-card" data-category="detail">
+            <div class="service-image"><img src="service/full-detailing.jpg" alt="Professional car detailing" loading="lazy"><span>03</span></div>
+            <div class="service-info"><div class="service-icon"><i class="bi bi-car-front"></i></div><h3>Full Car Detailing</h3><p>A more thorough interior and exterior clean for a refreshed, well-presented vehicle.</p><a href="#contact" class="text-link" data-service="Full Car Detailing">Enquire about this <i class="bi bi-arrow-up-right"></i></a></div>
+          </article>
+          <article class="service-card" data-category="detail">
+            <div class="service-image"><img src="service/car-polishing.jpg" alt="Car paint polishing" loading="lazy"><span>04</span></div>
+            <div class="service-info"><div class="service-icon"><i class="bi bi-brightness-high"></i></div><h3>Rubbing & Polishing</h3><p>Paint correction and polishing options selected according to the vehicle's paint condition.</p><a href="#contact" class="text-link" data-service="Rubbing and Polishing">Enquire about this <i class="bi bi-arrow-up-right"></i></a></div>
+          </article>
+          <article class="service-card" data-category="protect">
+            <div class="service-image"><img src="service/ceramic-coating.jpg" alt="Glossy premium car exterior" loading="lazy"><span>05</span></div>
+            <div class="service-info"><div class="service-icon"><i class="bi bi-shield-check"></i></div><h3>Ceramic Coating</h3><p>Coating options designed to enhance gloss and make routine vehicle maintenance easier.</p><a href="#contact" class="text-link" data-service="Ceramic Coating">Enquire about this <i class="bi bi-arrow-up-right"></i></a></div>
+          </article>
+          <article class="service-card" data-category="protect">
+            <div class="service-image"><img src="service/ppf-coating.jpg" alt="Luxury car exterior for paint protection" loading="lazy"><span>06</span></div>
+            <div class="service-info"><div class="service-icon"><i class="bi bi-shield-lock"></i></div><h3>PPF Paint Protection</h3><p>Explore paint protection film for selected vehicle panels or full-body coverage.</p><a href="#contact" class="text-link" data-service="PPF Paint Protection">Enquire about this <i class="bi bi-arrow-up-right"></i></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section section" id="about">
+      <div class="container about-layout">
+        <div class="about-visual reveal">
+          <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=1100&q=85" alt="Car detailing professional at work" loading="lazy">
+          <div class="image-note"><strong>DETAIL</strong><span>It's in the little things.</span></div>
+        </div>
+        <div class="about-copy reveal">
+          <p class="eyebrow"><span></span> THE AUTOCARE DIFFERENCE</p>
+          <h2>Not just clean.<br><em>Cared for.</em></h2>
+          <p class="muted">Every vehicle has different needs. Our approach starts with understanding your car, choosing the right service and paying attention to the details that matter.</p>
+          <div class="feature-list">
+            <div class="feature"><i class="bi bi-check2"></i><div><h3>Service matched to your car</h3><p>Discuss your vehicle's condition and choose a suitable service.</p></div></div>
+            <div class="feature"><i class="bi bi-check2"></i><div><h3>Careful cleaning approach</h3><p>Use appropriate products and methods for different surfaces.</p></div></div>
+            <div class="feature"><i class="bi bi-check2"></i><div><h3>Simple booking process</h3><p>Send an enquiry through WhatsApp and confirm your appointment.</p></div></div>
+          </div>
+          <a href="#contact" class="button button-orange">Talk to our team <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="package-section section" id="packages">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="eyebrow dark-eyebrow"><span></span> SERVICE PACKAGES</p>
+          <h2>Find your level<br>of <em>car care.</em></h2>
+          <p>Choose a starting point. We'll confirm the right service and quote based on your vehicle.</p>
+        </div>
+        <div class="package-grid">
+          <article class="package-card">
+            <p class="package-label">EVERYDAY ESSENTIAL</p><h3>Fresh Wash</h3><p class="package-desc">For regular exterior upkeep.</p>
+            <div class="package-price">Get a quote</div>
+            <ul><li><i class="bi bi-check2"></i> Exterior foam wash</li><li><i class="bi bi-check2"></i> Wheel and tyre cleaning</li><li><i class="bi bi-check2"></i> Exterior wipe down</li></ul>
+            <a href="#contact" class="button button-outline" data-package="Fresh Wash">Enquire now <i class="bi bi-arrow-up-right"></i></a>
+          </article>
+          <article class="package-card package-featured">
+            <span class="popular-tag">POPULAR OPTION</span><p class="package-label">COMPLETE REFRESH</p><h3>Premium Care</h3><p class="package-desc">For a cleaner cabin and exterior.</p>
+            <div class="package-price">Get a quote</div>
+            <ul><li><i class="bi bi-check2"></i> Exterior wash</li><li><i class="bi bi-check2"></i> Interior vacuuming</li><li><i class="bi bi-check2"></i> Dashboard and surface cleaning</li></ul>
+            <a href="#contact" class="button button-orange" data-package="Premium Care">Enquire now <i class="bi bi-arrow-up-right"></i></a>
+          </article>
+          <article class="package-card">
+            <p class="package-label">SPECIALIST FINISH</p><h3>Detailing Care</h3><p class="package-desc">For more detailed vehicle care.</p>
+            <div class="package-price">Get a quote</div>
+            <ul><li><i class="bi bi-check2"></i> Vehicle condition assessment</li><li><i class="bi bi-check2"></i> Deep-cleaning options</li><li><i class="bi bi-check2"></i> Polishing / protection options</li></ul>
+            <a href="#contact" class="button button-outline" data-package="Detailing Care">Enquire now <i class="bi bi-arrow-up-right"></i></a>
+          </article>
+        </div>
+        <p class="package-note">Package details and prices are illustrative demo content. Confirm actual services, inclusions and rates before publishing.</p>
+      </div>
+    </section>
+
+    <section class="booking-banner">
+      <div class="container booking-inner reveal">
+        <div><p class="eyebrow"><span></span> READY FOR A REFRESH?</p><h2>Make your next drive<br><em>feel brand new.</em></h2></div>
+        <a class="button button-orange" href="#contact">Request a booking <i class="bi bi-arrow-up-right"></i></a>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading heading-row contact-heading">
+          <div><p class="eyebrow dark-eyebrow"><span></span> LET'S CONNECT</p><h2>Your car's next<br><em>clean starts here.</em></h2></div>
+          <p class="heading-description">Tell us what your car needs. Share your details and we'll open a WhatsApp enquiry with your information.</p>
+        </div>
+        <div class="contact-layout">
+          <div class="contact-details">
+            <div class="contact-detail"><span><i class="bi bi-geo-alt"></i></span><div><small>LOCATION</small><strong>Ranchi, Jharkhand, India</strong></div></div>
+            <div class="contact-detail"><span><i class="bi bi-whatsapp"></i></span><div><small>QUICK ENQUIRY</small><strong>WhatsApp booking available</strong></div></div>
+            <div class="contact-detail"><span><i class="bi bi-calendar-check"></i></span><div><small>APPOINTMENTS</small><strong>Confirm your preferred time</strong></div></div>
+            <div class="contact-callout"><i class="bi bi-info-circle"></i><p>This is a sample business website. Replace demo details with the actual car care business information before launch.</p></div>
+          </div>
+          <form class="booking-form" id="bookingForm" novalidate>
+            <h3>Request a service</h3>
+            <p>Fields marked * are required.</p>
+            <div class="form-grid">
+              <label>Your name *<input type="text" id="customerName" name="name" placeholder="Enter your name" required maxlength="60"></label>
+              <label>Phone number *<input type="tel" id="customerPhone" name="phone" placeholder="10-digit mobile number" required inputmode="numeric" maxlength="15"></label>
+              <label class="full">Select a service *<select id="serviceSelect" name="service" required><option value="">Choose a service</option><option>Premium Foam Wash</option><option>Interior Deep Cleaning</option><option>Full Car Detailing</option><option>Rubbing & Polishing</option><option>Ceramic Coating</option><option>PPF Paint Protection</option><option>Fresh Wash Package</option><option>Premium Care Package</option><option>Detailing Care Package</option></select></label>
+              <label class="full">Message (optional)<textarea id="customerMessage" name="message" rows="4" placeholder="Car model, preferred date or any questions..."></textarea></label>
+            </div>
+            <p class="form-error" id="formError" role="alert" aria-live="polite"></p>
+            <button class="button button-orange submit-button" type="submit">Send enquiry on WhatsApp <i class="bi bi-whatsapp"></i></button>
+            <small class="form-footnote">Your enquiry will be prepared in WhatsApp. No payment is collected on this demo site.</small>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div><a class="brand footer-brand" href="#home">RANCHI<span>AUTOCARE</span><i>.</i></a><p>Thoughtful car washing and detailing for drivers in Ranchi.</p></div>
+      <div><h4>Explore</h4><a href="#services">Services</a><a href="#about">Why choose us</a><a href="#packages">Packages</a></div>
+      <div><h4>Get in touch</h4><a href="#contact">Ranchi, Jharkhand</a><a href="#contact">WhatsApp enquiry</a><a href="#contact">Book an appointment</a></div>
+      <div class="footer-social"><h4>Follow the shine</h4><a href="#contact" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="#contact" aria-label="Facebook"><i class="bi bi-facebook"></i></a></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="currentYear"></span> Ranchi AutoCare. Demo website.</span><span>Designed by <strong>PratimaaTech</strong></span></div>
+  </footer>
+
+  <a class="whatsapp-float" href="#" id="whatsappFloat" aria-label="Chat on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
